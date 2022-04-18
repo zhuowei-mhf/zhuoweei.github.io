@@ -250,23 +250,7 @@
                 match.addEventListener('change', switchDarkMode);
             }
 
-            function switchDarkMode(arg) {
-                let node = document.documentElement;
-                let darkMode = false;
-                
-                if (arg instanceof MediaQueryList || arg instanceof MediaQueryListEvent) {
-                    darkMode = arg.matches;
-                } else {
-                    darkMode = arg;
-                }
-                
-                node.classList.toggle("dark", darkMode);
-            }
-            switchDarkMode(match);
-
-            document.querySelector(".switch").addEventListener("click", (ev) => {
-                switchDarkMode(!document.documentElement.classList.contains("dark"));
-            });
+           
         </script>
     </body>
 </html>
