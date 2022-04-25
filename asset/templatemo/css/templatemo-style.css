@@ -1,33 +1,9 @@
-/**
-
-Mini Profile Template
-
-https://templatemo.com/tm-530-mini-profile
-
-
-Color Codes
-------------
-brown: #986665;
-green: #98cb00;
-orange: #cc6733;
-blue: #3398cc;
-dark-gray: #676767;
-light-gray: #999999;
-text-gray: #6b6b6b;
-
-*/
-
-html {
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #6b6b6b;
-  overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional");
+html, body {
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Consolas', 'Noto Sans CJK TC', "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
 
 a,
