@@ -15,7 +15,7 @@
 
     </head>
     <body>
-        <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/background.jpg">
+        <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="./img/background.jpg">
           <div class="container-fluid tm-brand-container-outer">
             <div class="row">
               <div class="col-12">
@@ -36,6 +36,12 @@
               <div class="tm-welcome-left">
               </div>
               </div>
+          </div>
+         <div class="col-md-5">
+              <div class="tm-welcome-right">
+                <i class="fas fa-4x fa-address-card p-3 tm-welcome-icon"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -169,5 +175,28 @@
               </div>
               </div>
         </section>
+                
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+    
+      function setBrandMarginTop() {
+        var bottomContainerHeight = $(".tm-welcome-container").height();
+
+        $(".tm-brand-container-outer").css({
+          "margin-top": -bottomContainerHeight + "px"
+        });
+      }
+
+      $(function() {
+        setBrandMarginTop();
+        detectMsBrowser();
+
+        // Handle window resize event
+        $(window).resize(function() {
+          setBrandMarginTop();
+        });
+      });
+    </script>
     </body>
 </html>
